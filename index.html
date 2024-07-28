@@ -11,34 +11,57 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #121212;
-            color: #f4f4f4;
         }
         .container {
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            background: #1e1e1e;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        h1, h2 {
-            color: #ffffff;
-        }
-        p {
-            margin: 1em 0;
         }
         .license-terms {
-            background: #333333;
             padding: 10px;
-            border-left: 4px solid #ffffff;
             margin: 20px 0;
+            border-left: 4px solid;
         }
-        .license-terms h2 {
-            margin-top: 0;
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #f4f4f4;
+            }
+            .container {
+                background: #1e1e1e;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+            h1, h2 {
+                color: #ffffff;
+            }
+            .license-terms {
+                background: #333333;
+                border-color: #ffffff;
+            }
+            a {
+                color: #1e90ff;
+            }
         }
-        a {
-            color: #1e90ff;
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: #f4f4f4;
+                color: #121212;
+            }
+            .container {
+                background: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1, h2 {
+                color: #333333;
+            }
+            .license-terms {
+                background: #eeeeee;
+                border-color: #333333;
+            }
+            a {
+                color: #1e90ff;
+            }
         }
     </style>
 </head>
@@ -52,7 +75,7 @@
         <div class="license-terms">
             <h2>Under the following terms:</h2>
             <p><strong>No Text Copying</strong> — You may not copy, paste, or reproduce the text content of this message in any form.</p>
-            <p><strong>Reply with Attribution</strong> — You may add on to the original message as long as you reply to the original message and state that the original message is copyrighted under Lock's Silly License.</p>
+            <p><strong>Reply with Attribution</strong> — You may add on to the original message as long as you reply to the original message and state that the original message is copyrighted by Lock under Lock's Silly License.</p>
             <p><strong>No Derivatives</strong> — If you remix, transform, or build upon the material, you may not distribute the modified material.</p>
         </div>
         <p>This license is in effect as long as the terms are followed. For any use not covered by this license, please contact the author.</p>
